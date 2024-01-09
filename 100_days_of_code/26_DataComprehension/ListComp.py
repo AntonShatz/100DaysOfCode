@@ -35,3 +35,9 @@ numbers_2 = [11,21,2,32,24,83,13,231,34,8,55,1]
 result_2 = [num for num in numbers_1 if num in numbers_2]
 print(result_2)
 
+data_to_assert = [1,2,2,3,4,5,9,5]
+data_to_assert_from = [1,2,2,3,4,5,9,5]
+result = all(data_to_assert_from.count(num) == data_to_assert.count(num) for num in data_to_assert)
+
+
+print(result)
